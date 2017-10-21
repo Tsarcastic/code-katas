@@ -1,3 +1,10 @@
+"""Kata: Get the Middle Character
+
+Best practice by hiasen and others:
+def get_middle(s):
+   return s[(len(s)-1)/2:len(s)/2+1]
+"""
+
 def get_middle(s):
     #your code here
     size = len(s)

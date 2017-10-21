@@ -23,6 +23,11 @@
 7 Kyu - Get the Middle Character
 - Module - cw05_gtmc.py
 - Tests - test_cw05_gtmc.py
-- URL - https://www.codewars.com/kata/find-the-middle-element
+- URL - https://www.codewars.com/kata/get-the-middle-character
+
+7 Kyu - Categorize New Member
+- Module - cw06_new_member.py
+- Tests - test_cw006_new_member.py
+- URL - https://www.codewars.com/kata/categorize-new-member
 
 
