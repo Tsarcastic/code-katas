@@ -1,5 +1,18 @@
+"""Kata: Count of Positives Sum of Negatives
+
+Best Practice Solution by akii and others
 def count_positives_sum_negatives(arr):
-    #your code here
+    if not arr: return []
+    pos = 0
+    neg = 0
+    for x in arr:
+      if x > 0:
+          pos += 1
+      if x < 0:
+          neg += x
+    return [pos, neg]"""
+
+def count_positives_sum_negatives(arr):
     pos = 0
     neg = 0
     for x in arr:
