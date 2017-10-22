@@ -43,5 +43,9 @@
 7 Kyu - Gau needs help!
 - Module - cw09_gau.py
 - Tests - test_cw09_gau.py
-- URL - https://www.codewars.com/kata/write-number-in-expanded-form
+- URL - https://www.codewars.com/kata/gauss-needs-help-sums-of-a-lot-of-numbers
 
+7 kyu - Sum of all the multiples of 3 or 5
+- Module - cw10_soatm.py
+- Tests - test_cw10_soatm.py
+- URL - https://www.codewars.com/kata/sum-of-all-the-multiples-of-3-or-5/solutions/python

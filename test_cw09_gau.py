@@ -22,6 +22,6 @@ def test_05():
     from cw09_gau import f
     assert f(3) == 6
 
-def test_01():
+def test_06():
     from cw09_gau import f
     assert f(2) == 3
