@@ -27,7 +27,21 @@
 
 7 Kyu - Categorize New Member
 - Module - cw06_new_member.py
-- Tests - test_cw006_new_member.py
+- Tests - test_cw06_new_member.py
 - URL - https://www.codewars.com/kata/categorize-new-member
 
+7 Kyu - Mumbling
+- Module - cw07_mumbling.py
+- Tests - test_cw07_mumbling.py
+- URL - https://www.codewars.com/kata/mumbling
+
+6 Kyu - Write Number in Expanded Form
+- Module - cw08_write_num.py
+- Tests - test_cw08_write_num.py
+- URL - https://www.codewars.com/kata/write-number-in-expanded-form
+
+7 Kyu - Gau needs help!
+- Module - cw09_gau.py
+- Tests - test_cw09_gau.py
+- URL - https://www.codewars.com/kata/write-number-in-expanded-form
 

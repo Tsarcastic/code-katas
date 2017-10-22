@@ -1,3 +1,10 @@
+"""
+Kata: Categorize New Member
+Best Practice by taw and others:
+def openOrSenior(data):
+  return ["Senior" if age >= 55 and handicap >= 8 else "Open" for (age, handicap) in data]
+"""
+
 def openOrSenior(data):
     # Hmmm.. Where to start?
     newList = []

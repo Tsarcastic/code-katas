@@ -1,6 +1,9 @@
-# Best Practice
-# def f(n):
+""" Kata: Gau Needs Help!
+Best Practice by TTJP et al.
+def f(n):
     # return sum(range(n+1))
+"""
+
 
 def f(n):
     sum = 0
