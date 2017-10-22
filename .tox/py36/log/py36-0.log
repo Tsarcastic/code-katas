@@ -1,0 +1,8 @@
+actionid: py36
+msg: getenv
+cmdargs: ['c:\\users\\brend\\python401\\code-katas\\env\\scripts\\python.exe', '-m', 'virtualenv', '--python', 'C:\\Program Files (x86)\\Python36-32\\python.exe', 'py36']
+
+Using base prefix 'C:\\Program Files (x86)\\Python36-32'
+New python executable in C:\Users\brend\python401\code-katas\.tox\py36\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter C:\Program Files (x86)\Python36-32\python.exe

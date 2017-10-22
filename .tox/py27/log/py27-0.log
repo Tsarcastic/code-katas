@@ -1,0 +1,7 @@
+actionid: py27
+msg: getenv
+cmdargs: ['c:\\users\\brend\\python401\\code-katas\\env\\scripts\\python.exe', '-m', 'virtualenv', '--python', 'c:\\python27\\python.exe', 'py27']
+
+New python executable in C:\Users\brend\python401\code-katas\.tox\py27\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter c:\python27\python.exe
