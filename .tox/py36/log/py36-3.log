@@ -1,8 +1,0 @@
-actionid: py36
-msg: envreport
-cmdargs: ['C:\\Users\\brend\\python401\\code-katas\\.tox\\py36\\Scripts\\pip.EXE', 'freeze']
-
-colorama==0.3.9
-py==1.4.34
-pytest==3.2.3
-UNKNOWN==0.0.0
