@@ -37,8 +37,11 @@ class Queue(object):
         if not self.head:
             raise IndexError("There is nothing to dequeue.")
         output = self.head.data
-        self.head.next_node.previous = None
-        self.head = self.head.next_node
+        if self.head.next_node:
+            self.head.next_node.previous = None
+            self.head = self.head.next_node
+        else:
+            self.head = None
         self._counter -= 1
         return output
 
@@ -58,15 +61,15 @@ def paranthetic(parens):
         parens = list(parens)
         paren_tracker = 0
         for i in parens:
-            the_queue.push(i)
+            the_queue.enqueue(i)
         
-        while len(the_queue) > 0:
-            while paren_tracker >= 0:
-                top = the_queue.dequeue()
-                if top = "(":
-                    paren_tracker += 1
-                if top = ")":
-                    paren_tracker -+ 1
+        while paren_tracker >= 0 and len(the_queue) > 0:
+            top = the_queue.dequeue()
+            print(top)
+            if top == "(":
+                paren_tracker += 1
+            if top == ")":
+                paren_tracker -= 1
         if paren_tracker > 1: 
             return 1
         if paren_tracker < -1:
@@ -75,4 +78,4 @@ def paranthetic(parens):
             return paren_tracker
 
 if __name__ == '__main__':
-    print(paranthetic(')))((('))
+    print(paranthetic('((()))'))
