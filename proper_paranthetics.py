@@ -77,5 +77,4 @@ def paranthetic(parens):
         else:
             return paren_tracker
 
-if __name__ == '__main__':
-    print(paranthetic('((()))'))
+
