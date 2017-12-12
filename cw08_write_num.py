@@ -1,4 +1,5 @@
-"""Kata: Write Number in Expanded Form
+"""
+Kata: Write Number in Expanded Form.
 Best Practice by zebulan and sriddle
 def expanded_form(n):
     result = []
@@ -12,6 +13,7 @@ def expanded_form(n):
 
 
 def expanded_form(num):
+    """Expand the string."""
     x = str(num)
     the_string = ""
 

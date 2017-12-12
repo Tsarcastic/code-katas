@@ -1,4 +1,5 @@
-""" Kata: Gau Needs Help!
+"""
+Kata: Gau Needs Help.
 Best Practice by TTJP et al.
 def f(n):
     # return sum(range(n+1))
@@ -6,11 +7,12 @@ def f(n):
 
 
 def f(n):
+    """Simple math changes."""
     sum = 0
     if type(n) is int:
         while n > 0:
             sum += n
             n -= 1
-    if sum == 0: 
+    if sum == 0:
         return None
     return sum

@@ -1,4 +1,6 @@
-"""Kata: Mumbling
+"""
+
+Kata: Mumbling.
 Best Practice By coldbydauph & others
 def accum(s):
     return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
@@ -6,7 +8,7 @@ def accum(s):
 
 
 def accum(s):
-    # your code
+    """Mumble up some strings."""
     l = len(s)
     the_string = ""
     cnt = 0
