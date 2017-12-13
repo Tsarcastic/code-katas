@@ -16,6 +16,9 @@ def watch_pyramid_from_the_side(characters):
         multiplier += 1
 
 def watch_pyramid_from_above(characters):
+    characters.split()
+    characters.reverse()
+    size = len(characters)
 
 def count_visible_characters_of_the_pyramid(characters):
 
