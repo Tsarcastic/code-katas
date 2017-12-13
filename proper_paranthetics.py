@@ -31,7 +31,6 @@ class Queue(object):
             self.tail = new_tail
         self._counter += 1
 
-
     def dequeue(self):
         """Remove a node from the head of the queue."""
         if not self.head:
@@ -45,7 +44,6 @@ class Queue(object):
         self._counter -= 1
         return output
 
-
     def size(self):
         """Return the size of the queue."""
         return self._counter
@@ -56,13 +54,13 @@ class Queue(object):
 
 
 def paranthetic(parens):
-        """Tests a string to see if it's open, balanced, or broken."""
+        """Test a string to see if it's open, balanced, or broken."""
         the_queue = Queue()
         parens = list(parens)
         paren_tracker = 0
         for i in parens:
             the_queue.enqueue(i)
-        
+
         while paren_tracker >= 0 and len(the_queue) > 0:
             top = the_queue.dequeue()
             print(top)
@@ -70,11 +68,9 @@ def paranthetic(parens):
                 paren_tracker += 1
             if top == ")":
                 paren_tracker -= 1
-        if paren_tracker > 1: 
+        if paren_tracker > 1:
             return 1
         if paren_tracker < -1:
             return -1
         else:
             return paren_tracker
-
-
