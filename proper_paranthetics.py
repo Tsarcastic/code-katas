@@ -62,7 +62,8 @@ def paranthetic(parens):
         paren_tracker = 0
         for i in parens:
             the_queue.enqueue(i)
-        
+        if len(the_queue) == 0:
+            return "Please enter a valid string."
         while paren_tracker >= 0 and len(the_queue) > 0:
             top = the_queue.dequeue()
             print(top)
