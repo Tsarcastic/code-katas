@@ -119,10 +119,3 @@ def test_parens_works03():
     from proper_paranthetics import Queue, paranthetic
     pr = "))"
     assert paranthetic(pr) == -1
-
-def test_parens_works
-
-
-
-
-    
