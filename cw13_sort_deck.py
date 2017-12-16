@@ -60,7 +60,19 @@ class Priority_Q(object):
                 temp.next_node.previous = temp
             else:
                 self.tail = temp
+                temp.next_node = None
             new_node.next_node = temp
             new_node.next_node.previous = new_node
 
         self._counter += 1
+
+    def return_list(self):
+        """To match the kata request."""
+        if self.head is None:
+            return
+        the_list = []
+        the_node = self.head
+        while the_node:
+            the_list.append(str(the_node.data))
+            the_node = the_node.next_node
+        return the_list

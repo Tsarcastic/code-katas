@@ -45,10 +45,19 @@ def test_priority_insert_works01():
     assert q.tail.data is 'K'    
 
 def test_a_longer_set01():
+    """A little bigger."""
     from cw13_sort_deck import Priority_Q
     list = ['A','K', 'Q', 'J']
     q = Priority_Q(list)
     assert q.head.data is 'A'
     assert q.head.next_node.data is 'J'
     assert q.tail.data is 'K'
+
+def test_a_longer_set02():
+    """An old fashioned how-do-you-do."""
+    from cw13_sort_deck import Priority_Q
+    list = ['A', 'K', 'Q', '9', '5', '10']
+    q = Priority_Q(list)
+    assert q.return_list() is ['A', '5', '9', '10', 'Q', 'K']
+
 
