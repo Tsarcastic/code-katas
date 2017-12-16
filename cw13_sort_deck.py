@@ -50,8 +50,8 @@ class Priority_Q(object):
             if new_node.next_node:
                 temp.next_node = new_node.next_node
                 temp.next_node.previous = temp
-            new_node.next_node = temp
-            new_node.next_node.previous = new_node
+            new_node.next = temp
+            new_node.next.previous = new_node
 
 
         self._counter += 1

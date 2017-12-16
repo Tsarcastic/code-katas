@@ -1,4 +1,4 @@
 {
-  "test_cw13_sort_deck.py::test_insert_creates_head": true,
+  "test_cw13_sort_deck.py::test_insert_with_priority_change": true,
   "test_cw13_sort_deck.py::test_node_has_attributes": true
 }
