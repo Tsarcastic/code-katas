@@ -11,26 +11,30 @@ class Node(object):
         self.next_node = None
         if self.data is 'A':
             self.priority = 1
-        elif self.data is int:
-            self.priority = 2
         elif self.data is 'T':
-            self.priority = 3
+            self.priority = 11
         elif self.data is 'J':
-            self.priority = 4
+            self.priority = 12
         elif self.data is 'Q':
-            self.priority = 5
+            self.priority = 13
         elif self.data is 'K':
-            self.priority = 6
+            self.priority = 14
+        else:
+            int(data)
+            self.priority = int(data)
 
 
 class Priority_Q(object):
     """A Line of Nodes."""
 
-    def __init__(self):
+    def __init__(self, iterable=()):
         """Create an empty queue."""
         self.head = None
         self.tail = None
         self._counter = 0
+        if hasattr(iterable, '__iter__') or isinstance(iterable, str):
+            for item in iterable:
+                self.insert(item)
 
     def insert(self, val):
         """Add a node to the tail of the queue."""

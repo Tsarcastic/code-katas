@@ -1,4 +1,5 @@
 {
+  "test_cw13_sort_deck.py::test_a_longer_set01": true,
   "test_cw13_sort_deck.py::test_insert_with_priority_change": true,
   "test_cw13_sort_deck.py::test_node_has_attributes": true
 }

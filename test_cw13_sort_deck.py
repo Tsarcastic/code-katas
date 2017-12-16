@@ -27,7 +27,7 @@ def test_insert_creates_head():
     assert q.head.data is 'A'
 
 def test_insert_creates_tail():
-    """Inserting a node will create a head."""
+    """Inserting a node will create a tail."""
     from cw13_sort_deck import Priority_Q
     q = Priority_Q()
     q.insert('A')
@@ -36,7 +36,7 @@ def test_insert_creates_tail():
     assert q.tail.data is 'K'
 
 def test_priority_insert_works01():
-    """Inserting a node will create a head."""
+    """Priority will move nodes."""
     from cw13_sort_deck import Priority_Q
     q = Priority_Q()
     q.insert('K')
@@ -44,4 +44,11 @@ def test_priority_insert_works01():
     assert q.head.data is 'A'
     assert q.tail.data is 'K'    
 
+def test_a_longer_set01():
+    from cw13_sort_deck import Priority_Q
+    list = ['A','K', 'Q', 'J']
+    q = Priority_Q(list)
+    assert q.head.data is 'A'
+    assert q.head.next_node.data is 'J'
+    assert q.tail.data is 'K'
 
