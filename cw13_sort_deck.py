@@ -60,7 +60,7 @@ class Priority_Q(object):
                 temp.next_node.previous = temp
             else:
                 self.tail = temp
-            new_node.next = temp
-            new_node.next.previous = new_node
+            new_node.next_node = temp
+            new_node.next_node.previous = new_node
 
         self._counter += 1
