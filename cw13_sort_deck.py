@@ -42,16 +42,21 @@ class Priority_Q(object):
             self.tail.next_node = new_node
             new_node.previous = self.tail
             self.tail = new_node
+
         while new_node.previous and new_node.priority < new_node.previous.priority:
             temp = new_node.previous
             if new_node.previous.previous:
                     new_node.previous.previous.next_node = new_node
-                    new_node.previous= new_node.previous.previous
+                    new_node.previous = new_node.previous.previous
+            else:
+                new_node.previous = None
+                self.head = new_node
             if new_node.next_node:
                 temp.next_node = new_node.next_node
                 temp.next_node.previous = temp
+            else:
+                self.tail = temp
             new_node.next = temp
             new_node.next.previous = new_node
-
 
         self._counter += 1
