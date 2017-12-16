@@ -58,6 +58,6 @@ def test_a_longer_set02():
     from cw13_sort_deck import Priority_Q
     list = ['A', 'K', 'Q', '9', '5', '10']
     q = Priority_Q(list)
-    assert q.return_list() is ['A', '5', '9', '10', 'Q', 'K']
+    assert q.return_list() == ['A', '5', '9', '10', 'Q', 'K']
 
 
