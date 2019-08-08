@@ -1,21 +1,21 @@
-"""Kata: Money, Money, Money
+"""
+Kata: Money, Money, Money.
 
 Best Practice Solution by clawtros and others
+"""
 
-
-def filter_list(l):
-  'return a new list with the strings filtered out'
-  return [i for i in l if not isinstance(i, str)]"""
 
 def calculate_years(principal, interest, tax, desired):
+    """Calculate the years."""
     years = 0
-    P = principal
-    while desired > P:
-        I = P * interest
-        T = I * tax
-        P = P + I - T
+    p = principal
+    while desired > p:
+        i = p * interest
+        t = i * tax
+        p = p + i - t
         years += 1
     return years
+
 
 print(calculate_years(1000, .1, .12, 1100))
 print(calculate_years(2000, .3, .08, 1100))

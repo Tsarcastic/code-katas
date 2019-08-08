@@ -1,4 +1,5 @@
-"""Kata: Find the middle element
+"""
+Kata: Find the middle element.
 
 Best Practice by taw and others:
 def gimme(inputArray):
@@ -6,8 +7,9 @@ def gimme(inputArray):
     return inputArray.index(sorted(inputArray)[1])
 """
 
+
 def gimme(input_array):
-    # Implement this function
+    """Implement this function."""
     if input_array[0] > input_array[1] and input_array[0] < input_array[2]:
         return 0
     elif input_array[0] < input_array[1] and input_array[0] > input_array[2]:
