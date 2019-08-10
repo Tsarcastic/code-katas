@@ -49,3 +49,8 @@
 - Module - cw10_soatm.py
 - Tests - test_cw10_soatm.py
 - URL - https://www.codewars.com/kata/sum-of-all-the-multiples-of-3-or-5/solutions/python
+
+Proper Paranthetics
+- Module - proper_paranthetics
+- Test - test_paranthetics
+- URL - https://codefellows.github.io/sea-python-401d7/assignments/proper_parenthetics.html
